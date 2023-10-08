@@ -1,3 +1,5 @@
+import { strictEqual } from "assert"
+
 function orderWeight(strng: string): string {
 
     let resultArr: string[] = []
@@ -32,11 +34,15 @@ function orderWeight(strng: string): string {
     }
 
     console.log({ inputArr, digitSumArray, sortedDigitArray, resultArr })
+    console.log(resultArr.map((x) => { return x.toString() }).join(" "))
     return resultArr.map((x) => { return x.toString() }).join(" ")
+
 }
 
 function sortArray(arr: number[]): number[] {
-    return arr = arr.sort(function (a, b) { return b - a })
+    return arr = arr.sort(function (a, b) { return a - b })
 }
 
-orderWeight("103 123 4444 99 2000")
+let res = orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123")
+
+console.log(strictEqual(res, "11 11 2000 10003 22 123 1234000 44444444 9999"))
