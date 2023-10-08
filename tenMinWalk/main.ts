@@ -1,6 +1,6 @@
 function isValidWalk(walk: string[]) {
 
-    let xAxis, yAxis
+    let xAxis: number, yAxis: number
     xAxis = yAxis = 0
 
     for (let i in walk) {
