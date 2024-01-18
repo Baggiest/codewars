@@ -13,7 +13,7 @@ function pyramid(n: number): Array<Array<Number>> {
     return result;
 }
 
-pyramid(0) 
+pyramid(0)
 pyramid(1)
-pyramid(2) 
+pyramid(2)
 pyramid(3) 
