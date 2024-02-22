@@ -17,7 +17,7 @@ export function solution(number: number): string {
   for (let i = 0; i < 4 - initialArrLen; i++) {
     numArr.unshift(0)
   }
-  // turns [3] into [3,0,0,0]
+  // turns [3] into [0,0,0,3]
 
   resultStr = thousands[numArr[0]] + hundreds[numArr[1]] + tens[numArr[2]] + units[numArr[3]]
   return resultStr;
